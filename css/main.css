@@ -6,7 +6,6 @@
     --gray_color:#E4E5E5;
     --gradient_main:linear-gradient(180deg, rgba(12, 12, 12, 0) 0%, rgba(12, 12, 12, 0.85) 84.9%);
     --title_color:color: rgba(255, 255, 255, 0.8);
-
 }
 
 *{
@@ -38,13 +37,17 @@ li {
 
 
 
-/* Navigation CSS */
+/* 
+    ==============
+    Navigation CSS
+    ============== 
+*/
 nav{
     display: flex;
     background-image: var(--gradient_main),url(../img/header-img.png);
     background-repeat: no-repeat;
     background-size: 100% 100%; 
-    height: 100vh;
+    height: 130vh;
 }
 
 nav .logo{
@@ -104,7 +107,11 @@ nav .right-components .side-menu-bar p{
 
 
 
-/* Main Title CSS */
+/* 
+    ==============
+    Main Title CSS
+    ============== 
+*/
 
 .headings{
     position: absolute;
@@ -123,8 +130,9 @@ nav .right-components .side-menu-bar p{
 }
 
 .headings .mid-title h1{
-    font-size: 63px;
     font-weight: 600;
+    font-size: 63px;
+    line-height: 83px;
     color: white;
     letter-spacing: 9px;
 }
@@ -157,7 +165,11 @@ nav .right-components .side-menu-bar p{
 
 
 
-/* Search Box CSS */
+/* 
+    ==============
+    Search Box CSS
+    ============== 
+*/
 
 .search-box{
     position: absolute;
@@ -186,6 +198,415 @@ nav .right-components .side-menu-bar p{
 }
 
 
-/* Recent Estate Projects Section CSS */
+/* 
+    ===========================
+    Estate Projects Section CSS
+    =========================== 
+*/
+.estate-section{
+    height: 992px;
+    background-color: #020202;
+    background-image: url(../img/background-arc.png);
+    overflow: hidden;
+}
+
+.estate-section .title{
+   position: relative;
+   margin-left: 15rem;
+   top: 5rem;
+}
+
+.estate-section .top-title{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 5px;
+    color: rgba(194, 194, 194, 0.8);
+}
 
 
+.estate-section .down-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 5px;
+}
+
+.estate-section .down-title h5{
+    background: linear-gradient(90deg, #ECEDED 4.59%, #8A8E93 31.42%, #4C546B 70.68%, #2C3756 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    fill-color: transparent;
+}
+
+.estate-section .title .see-title{
+    position: absolute;
+    margin-left: 43rem;
+    bottom: 1rem;
+    color: var(--gray_color);
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 4px;
+    z-index: 2;
+}
+
+.estate-section .title .arrow-icon{
+    position: absolute;
+    margin-left: 50rem;
+    bottom: 0rem;
+    width: 60px;
+    height: 60px;
+    background-color: var(--gray_color);
+    border-radius: 50%;
+    
+}
+
+.estate-section .title .arrow-icon img{
+    position: absolute;
+    margin-top: 0.8rem;
+    left: 0.8rem;
+
+}
+
+.estate-section .estate-boxes .estate-box-one .estate-img .off-plan-box{
+    position: relative;
+    top: 13.5rem;
+    left: 18rem;
+    width: 126px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(5px);
+    border-radius: 33px;
+    z-index: 2;
+}
+
+.estate-section .estate-boxes .estate-box-one .estate-img .off-plan-box h6{
+    position: absolute;
+    left: 1.2rem;
+    top: 0.8rem;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 3.52537px;
+    color: var(--gray_color);
+}
+
+.estate-section .estate-boxes .estate-box-one .content{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.87);
+    width: 380px;
+    padding: 1rem;
+    left: 2.5rem;
+    margin-top: 0.2rem;
+    z-index: 2;
+}
+
+.estate-section .estate-boxes .estate-box-one .content .price h2{
+    line-height: 33px;
+    margin-top: 0.5rem;
+    letter-spacing: 0.567625px;
+    background: linear-gradient(90deg, #ECEDED 4.59%, #8A8E93 31.42%, #4C546B 70.68%, #2C3756 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+}
+
+.estate-section .estate-boxes .estate-box-one .content .availabe-txt h6{
+    margin-bottom: 0.5rem;
+}
+
+.estate-section .estate-boxes .estate-box-one .content .availabe-txt .green-tick-mark{
+    position: absolute;
+    margin-top: -10.1rem;
+    left: -1.2rem;
+}
+
+.estate-section .estate-boxes .estate-box-one .content .availabe-txt .green-tick-mark img{
+    width: 16px;
+    height: 16px;
+}
+
+.estate-section .estate-boxes .estate-box-one .content .availabe-txt h6{
+    color: var(--gray_color);
+    margin-left: 1rem;
+}
+
+.estate-section .estate-boxes .estate-box-one .content .para h6{
+    color: #FFFFFF;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0.567625px;
+    opacity: 0.6;
+}
+
+.estate-section .estate-boxes .estate-box-one .content .line{
+    height:1px;
+    width: 22rem;
+    margin-top: 0.5rem;
+    background: #747A85;
+}
+
+
+.estate-section .estate-boxes .estate-box-one .content .payment-plan {
+    position: absolute;
+    left: 15rem;
+}
+
+.estate-section .estate-boxes .estate-box-one .content .payment-plan h6{
+    position: relative;
+    left: -0.5rem;
+    bottom: 1.5rem;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.estate-section .estate-boxes .estate-box-one .content .payment-plan img{
+    position: absolute;
+    top: -1.4rem;
+    left: -1.5rem;
+    width: 11px;
+    height: 11px;
+    font-weight: 400;
+}
+
+/* Estate Section Box One*/
+
+.estate-section .estate-boxes .estate-box-one .bottom-content{
+    position: absolute;
+    z-index: 2;
+    margin-top: 10rem;
+    margin-left: 2.8rem; 
+    padding: 0;
+}
+
+.estate-section .estate-boxes .estate-box-one .bottom-content .bottom-top-title h6{
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    letter-spacing: 1.61px;
+    line-height: 13px;
+}
+
+.estate-section .estate-boxes .estate-box-one .bottom-content .bottom-down-title h2{
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.611111px;
+    color: #FFFFFF;
+}
+
+.estate-section .estate-boxes .estate-box-one .bottom-content .location{
+    position: absolute;
+    margin-left: 15rem;
+    bottom: 2rem;
+}
+
+.estate-section .estate-boxes .estate-box-one .bottom-content .location img{
+    position: absolute;
+    margin-left: 1rem;
+    bottom: -0.2rem;
+    width: 19px;
+    height: 19px;
+}
+
+.estate-section .estate-boxes .estate-box-one .bottom-content .location h6{
+    color: #FFFFFF;
+    margin-left: 2.5rem;
+}
+
+
+.estate-section .estate-boxes .estate-box-one .estate-img img{
+    position: relative;
+    left: 2rem;
+    top: 10rem;
+    width: 400px;
+    height: 500px;
+}
+
+.estate-section .estate-boxes .estate-box-two .estate-img img{
+    position: relative;
+    left: 34rem;
+    bottom: 18rem;
+    width: 400px;
+    height: 500px;
+}
+
+
+.estate-section .estate-boxes .estate-box-three .estate-img img{
+    position: relative;
+    margin-left: 65rem;
+    bottom: 44rem;
+    width: 300px;
+    height: 300px;
+}
+
+/* Estate Section Box Two*/
+
+.estate-section .estate-boxes .estate-box-two .bottom-content{
+    position: absolute;
+    z-index: 2;
+    left: 34rem;
+    top: 105rem;
+    padding: 0;
+}
+
+.estate-section .estate-boxes .estate-box-two .bottom-content .bottom-top-title h6{
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    letter-spacing: 1.61px;
+    line-height: 13px;
+}
+
+.estate-section .estate-boxes .estate-box-two .bottom-content .bottom-down-title h2{
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.611111px;
+    color: #FFFFFF;
+}
+
+.estate-section .estate-boxes .estate-box-two .bottom-content .location{
+    position: absolute;
+    margin-left: 15rem;
+    bottom: 2rem;
+}
+
+.estate-section .estate-boxes .estate-box-two .bottom-content .location img{
+    position: absolute;
+    margin-left: 1rem;
+    bottom: -0.2rem;
+    width: 19px;
+    height: 19px;
+}
+
+.estate-section .estate-boxes .estate-box-two .bottom-content .location h6{
+    color: #FFFFFF;
+    margin-left: 2.5rem;
+}
+
+
+/* Estate Section Box Three*/
+
+.estate-section .estate-boxes .estate-box-three .bottom-content{
+    position: absolute;
+    z-index: 2;
+    margin-left: 65rem;
+    top: 98rem;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.estate-section .estate-boxes .estate-box-three .bottom-content .bottom-top-title h6{
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    letter-spacing: 1.61px;
+    line-height: 13px;
+}
+
+.estate-section .estate-boxes .estate-box-three .bottom-content .bottom-down-title h2{
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.611111px;
+    color: #FFFFFF;
+}
+
+.estate-section .estate-boxes .estate-box-three .bottom-content .location{
+    position: absolute;
+    margin-left: 15rem;
+    bottom: 2rem;
+}
+
+.estate-section .estate-boxes .estate-box-three .bottom-content .location img{
+    position: absolute;
+    margin-left: 1rem;
+    bottom: -0.2rem;
+    width: 19px;
+    height: 19px;
+}
+
+.estate-section .estate-boxes .estate-box-three .bottom-content .location h6{
+    color: #FFFFFF;
+    margin-left: 2.5rem;
+}
+
+
+/* 
+    ===========================
+    About US Section CSS
+    =========================== 
+*/
+
+.about-us {
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #020202;
+    background-image: url(../img/background-arc.png);
+}
+
+.about-us .left-side-img{
+    flex: 50%;
+    background-image: var(--gradient_main),url(../img/about-us-img.png);
+    background-size: cover;
+
+}
+
+.about-us .right-side-content{
+    flex: 50%;
+}
+
+.about-us .right-side-content .title {
+   position: relative;
+   margin-left: 5rem;
+   top: 20rem;
+}
+
+.about-us .right-side-content .title .top-title{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 5px;
+    color: rgba(194, 194, 194, 0.8);
+}
+
+
+.about-us .right-side-content .title .down-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 5px;
+}
+
+.about-us .right-side-content .title .down-title h5{
+    background: linear-gradient(90deg, #ECEDED 4.59%, #8A8E93 31.42%, #4C546B 70.68%, #2C3756 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    fill-color: transparent;
+}
+
+.about-us .right-side-content .title .para{
+    margin-top: 0.5rem;
+    color: #FFFFFF;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 1px;
+
+}
+
+.about-us .right-side-content .title .learn-btn{
+    position: absolute;
+    margin-top: 2rem;
+    width: 210px;
+    height: 55px;
+    background: #E4E5E5;
+    border-radius: 77px;
+}
+
+.about-us .right-side-content .title .learn-btn h6{
+    margin-top: 1.2rem;
+    margin-left: 4rem;
+    letter-spacing: 0.913793px;
+}
